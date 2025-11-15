@@ -56,6 +56,7 @@ Let's examine the key parameters of the `resample` function:
 - **`random_state`**: Makes random sampling reproducible
 
 n_sample > original_size --> oversampling
+
 n_sample < originsl_size --> undersampling
 
 ## Oversampling :
@@ -152,5 +153,6 @@ res = res.sample(frac=1, random_state=33).reset_index(drop=True)
 
 ## Conclusion
 Both oversampling and downsampling are powerful techniques for handling imbalanced data. The choice depends on your dataset size and specific use case. Remember to always evaluate your model on the original imbalanced test data!
+
 
 
