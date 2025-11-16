@@ -13,7 +13,7 @@ date: 2024-11-15
 
 Imagine a model that needs to predict the rare '0' values among 90 frequent '1' values.
 
-![Imbalanced Dataset Example](./images/data_sample.png)
+![Imbalanced Dataset Example](.data_sample.png)
 
 In this dataset:
 - **Minority class**: 0 (only 3 instances!)
@@ -163,6 +163,7 @@ res = res.sample(frac=1, random_state=33).reset_index(drop=True)
 
 ## Conclusion
 Both oversampling and downsampling are powerful techniques for handling imbalanced data. The choice depends on your dataset size and specific use case. Remember to always evaluate your model on the original imbalanced test data!
+
 
 
 
