@@ -42,7 +42,9 @@ Thanks to data scientists there are several solutions to this problem like :
 - **Cost-Sensitive Learning**
 - **Ensemble Methods**
 - **Anomaly Detection**
-The above solutions are taken from the GeeksforGeeks website
+The above solutions are taken from the GeeksforGeeks website :
+https://www.geeksforgeeks.org/machine-learning/what-is-imbalanced-dataset/
+
 Now we are going to try oversampling and undersampling 
 The key is to use **resample()** from sklearn 
 - What resample actually does : **It randomly picks samples and does not know which samples are important.**
@@ -163,6 +165,7 @@ res = res.sample(frac=1, random_state=33).reset_index(drop=True)
 
 ## Conclusion
 Both oversampling and downsampling are powerful techniques for handling imbalanced data. The choice depends on your dataset size and specific use case. Remember to always evaluate your model on the original imbalanced test data!
+
 
 
 
