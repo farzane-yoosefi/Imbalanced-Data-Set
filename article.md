@@ -110,7 +110,7 @@ majority = data[data.Target == 1]
 minority = data[data.Target == 0]
 
 
-#Oversample the majority class
+#Oversample the mainority class
 Over_sampled_minority = resample(minority,replace=True,n_samples=90, random_state=33)
 res = pd.concat([majority,Over_sampled_minority])
 res = res.sample(frac=1, random_state=33).reset_index(drop=True)
@@ -165,6 +165,7 @@ res = res.sample(frac=1, random_state=33).reset_index(drop=True)
 
 ## Conclusion
 Both oversampling and downsampling are powerful techniques for handling imbalanced data. The choice depends on your dataset size and specific use case. Remember to always evaluate your model on the original imbalanced test data!
+
 
 
 
