@@ -1,12 +1,8 @@
 
 
-
-title: Imbalanced Dataset
----
-date: 2024-11-15
----
-
 # How to handle imbalanced datasets
+>> These notes serve to demonstrate my machine learning knowledge to potential employers while also helping beginners learn complex concepts in simple terms.
+
 
 # The Imbalanced Data Problem: When Your Model Only Sees the Majority
 ### Let's start with an example:
@@ -165,6 +161,7 @@ res = res.sample(frac=1, random_state=33).reset_index(drop=True)
 
 ## Conclusion
 Both oversampling and downsampling are powerful techniques for handling imbalanced data. The choice depends on your dataset size and specific use case. Remember to always evaluate your model on the original imbalanced test data!
+
 
 
 
